@@ -41,6 +41,10 @@ const musicTracksSchema = new mongoose.Schema(
 			type: String,
 			required: true,
 		},
+		playListOrder: {
+			type: Number,
+			required: true,
+		},
 	},
 	options
 );
