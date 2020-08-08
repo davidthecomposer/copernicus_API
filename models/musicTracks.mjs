@@ -63,7 +63,7 @@ const trackCommentsSchema = new mongoose.Schema({
 		required: true,
 	},
 	timestamp: {
-		type: Number,
+		type: String,
 		required: true,
 	},
 });
@@ -75,7 +75,6 @@ musicTracksSchema.virtual("comments", {
 	// If `justOne` is true, 'members' will be a single doc as opposed to
 	// an array. `justOne` is false by default.
 	justOne: false,
-	options: { sort: { timestamp: -1 } }, // Query options, see http://bit.ly/mongoose-query-options
 });
 
 export const MusicTrack = mongoose.model("MusicTrack", musicTracksSchema);
