@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Copernicus API Splash</title>
+        <meta name="Explanation of the copernicus API" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+<div class="ui container">
+        <div class="ui sizer vertical segment title">
+            <h1 class="ui huge header">Copernicus API</h1>
+            <h3 class="ui tiny header">A very small API by David Campbell</h3>
+            </div>
+       
+
+
+        
+ 
+
+ <div class="ui raised segments">
+ <div class="ui  segment"> <h4 >/tracks</h4>
+    <p>This will get info for a specific track</p></div>
+   
+<div class="ui y segment"> <h4>/tracks/[:trackTitle]</h4>
+    <p>This will give you all the track info. There are only 9</p></div>
+<div class="ui  segment">  <h4>tracks/[:trackTitle]/comments</h4>
+    <p>This will allow you to link to the track comments DB. It expects a POST request</p></div>
+<div class="ui  segment">   <h4>/tracks/[:trackTitle]/comments/[:commentID]</h4>
+    <p>This will allow you to delete a comment with a DELETE request. But you have to have a password.</p></div>
+       
+</div>
+       
+      
+     
+       
+        <h3>That's All. Thanks for stopping by. </h3>
+
+         <a href="https://developer.davidhalcampbell.com"><button class="ui primary button">Back Home</button></a>
+         <a href="https://apps.davidhalcampbell.com/copernicus/build"><button class="ui button">Copernicus App</button></a>
+        
+        </div>
+    </body>
+</html>
+
+

@@ -35,6 +35,10 @@ const connectAndListen = async () => {
 
 connectAndListen();
 
+app.route("/").get((req, res) => {
+	res.sendFile(`${__dirname}/index.html`);
+});
+
 app.route("/tracks").get((req, res) => {
 	MusicTrack.find({})
 		.populate("comments")
